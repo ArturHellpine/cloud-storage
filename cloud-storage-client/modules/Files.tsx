@@ -22,13 +22,11 @@ export const Files: React.FC<FilesProps> = ({ items, withActions }) => {
     }
   };
 
-
   const onClickRemove = () => {
     setSelectedIds([]);
     setFiles((prev) => prev.filter((file) => !selectedIds.includes(file.id)));
     Api.files.remove(selectedIds);
   };
-
 
   return (
     <div>

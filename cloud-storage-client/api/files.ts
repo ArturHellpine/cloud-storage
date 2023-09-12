@@ -21,15 +21,15 @@ export const uploadFile = async (options: any) => {
     headers: { "Content-Type": "multipart/form-data" },
     onProgress: (event: ProgressEvent) => {
       onProgress({ percent: (event.loaded / event.total) * 100 })
-    },
+    }
   }
 
   try {
     const { data } = await axios.post("files", formData, config)
-
     onSuccess()
 
     return data
+
   } catch (err) {
     onError({ err })
   }

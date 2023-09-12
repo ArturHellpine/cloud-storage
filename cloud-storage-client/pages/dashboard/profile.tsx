@@ -1,11 +1,11 @@
 import { User } from "@/api/dto/auth.dto";
 import { GetServerSidePropsContext, NextPage } from "next";
-import styles from '@/styles/Profile.module.scss'
-import { Button, Card, Divider, Row, Space } from "antd";
+import { Button, Card, Divider } from "antd";
 import { checkAuth } from "@/utils/checkAuth";
-import * as Api from '@/api'
 import { Layout } from "@/layouts/Layout";
 import { useRouter } from "next/router";
+import styles from '@/styles/Profile.module.scss'
+import * as Api from '@/api'
 
 interface DashboardProfilePageProps {
     userData: User

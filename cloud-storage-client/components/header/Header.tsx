@@ -1,5 +1,5 @@
 import { Avatar, Button, Layout, Menu, Popover } from "antd";
-import { FC, useEffect } from "react";
+import { FC } from "react";
 import { CloudOutlined, LogoutOutlined } from "@ant-design/icons";
 import { useRouter } from "next/router";
 import styles from './Header.module.scss'

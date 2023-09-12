@@ -2,8 +2,8 @@ import React, { FC } from 'react'
 import styles from './Auth.module.scss'
 import { Button, Form, Input, notification } from 'antd'
 import { LoginFormDTO } from '@/api/dto/auth.dto'
-import * as Api from '@/api'
 import { setCookie } from 'nookies'
+import * as Api from '@/api'
 
 export const LoginForm: FC = () => {
 
@@ -33,7 +33,7 @@ export const LoginForm: FC = () => {
 
   return (
     <div className={styles.formBlock}>
-      <Form name="basic" onFinish={onSubmit} labelCol={{ span: 5}}>
+      <Form name="basic" onFinish={onSubmit} labelCol={{ span: 5 }}>
         <Form.Item
           label="Пошта"
           name="email"

@@ -39,7 +39,6 @@ export const DashboardLayout: React.FC<React.PropsWithChildren> = ({ children })
           ]}
         />
       </div>
-
       <div className="container">{children}</div>
     </main>
   );

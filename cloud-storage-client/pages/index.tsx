@@ -3,8 +3,8 @@ import styles from '@/styles/Home.module.scss'
 import DashboardPage from './dashboard'
 import { GetServerSidePropsContext } from 'next'
 import { checkAuth } from '@/utils/checkAuth'
-import * as Api from '@/api'
 import { FileItem } from '@/api/dto/files.dto'
+import * as Api from '@/api'
 
 interface Props {
   items: FileItem[]

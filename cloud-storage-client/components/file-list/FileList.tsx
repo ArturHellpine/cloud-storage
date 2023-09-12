@@ -1,5 +1,5 @@
-import { FileItem } from '@/api/dto/files.dto';
 import React, { FC } from 'react'
+import { FileItem } from '@/api/dto/files.dto';
 import { FileCard } from '../file-card/FileCard';
 import styles from './FileList.module.scss'
 import Selecto from "react-selecto";
